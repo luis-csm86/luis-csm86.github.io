@@ -33,6 +33,7 @@ export const skills: Skill[] = [
   { name: 'Communication', level: 90, category: 'soft_skills' },
   { name: 'Team Collaboration', level: 90, category: 'soft_skills' },
   { name: 'Problem Solving', level: 90, category: 'soft_skills' },
+  { name: 'Jupyter', level: 90, category: 'tools' },
 ];
 
 export const certifications: Certification[] = [

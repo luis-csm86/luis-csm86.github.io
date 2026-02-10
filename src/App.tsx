@@ -5,11 +5,12 @@ import Hero from './components/Hero';
 import Gallery from './components/Gallery';
 import ProjectDetail from './components/ProjectDetail';
 import Skills from './components/Skills';
+import About from './components/About';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 import HudBackground from './components/HudBackground';
 
-type View = 'home' | 'projects' | 'skills' | 'contact';
+type View = 'home' | 'projects' | 'skills' | 'about' | 'contact';
 
 function App() {
   const [currentView, setCurrentView] = useState<View>('home');
@@ -52,6 +53,8 @@ function App() {
             )}
 
             {currentView === 'skills' && <Skills />}
+
+            {currentView === 'about' && <About />}
 
             {currentView === 'contact' && <Contact />}
           </main>

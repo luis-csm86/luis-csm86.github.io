@@ -5,6 +5,7 @@ export interface Translations {
     home: string;
     projects: string;
     skills: string;
+    about: string;
     contact: string;
   };
   hero: {
@@ -28,6 +29,14 @@ export interface Translations {
   footer: {
     rights: string;
   };
+  about: {
+    title: string;
+    subtitle: string;
+    softSkills: string;
+    experience: string;
+    dataApproach: string;
+    workStyle: string;
+  };
 }
 
 export const translations: Record<Language, Translations> = {
@@ -36,6 +45,7 @@ export const translations: Record<Language, Translations> = {
       home: 'Home',
       projects: 'Projects',
       skills: 'Skills',
+      about: 'About',
       contact: 'Contact',
     },
     hero: {
@@ -59,12 +69,21 @@ export const translations: Record<Language, Translations> = {
     footer: {
       rights: 'All rights reserved',
     },
+    about: {
+      title: 'About Me',
+      subtitle: 'A bit about my journey, my value, and how I approach data.',
+      softSkills: 'Soft Skills',
+      experience: 'Professional Experience',
+      dataApproach: 'My Approach to Data',
+      workStyle: 'How I work', 
+    },
   },
   es: {
     nav: {
       home: 'Inicio',
       projects: 'Proyectos',
       skills: 'Habilidades',
+      about: 'Sobre mi',
       contact: 'Contacto',
     },
     hero: {
@@ -87,6 +106,14 @@ export const translations: Record<Language, Translations> = {
     },
     footer: {
       rights: 'Todos los derechos reservados',
+    },
+    about: {
+      title: 'Sobre Mi',
+      subtitle: 'Un poco sobre mi trayectoria, mis valores y cómo trabajo con datos.',
+      softSkills: 'Aptitutes',
+      experience: 'Experiencia Profesional',
+      dataApproach: 'Mi Enfoque con los Datos',
+      workStyle: 'Cómo Trabajo',    
     },
   },
 };

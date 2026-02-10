@@ -2,8 +2,8 @@ import { Languages } from 'lucide-react';
 import { useLanguage } from '../context/LanguageContext';
 
 interface NavigationProps {
-  currentView: 'home' | 'projects' | 'skills' | 'contact';
-  onNavigate: (view: 'home' | 'projects' | 'skills' | 'contact') => void;
+  currentView: 'home' | 'projects' | 'skills' | 'about' | 'contact';
+  onNavigate: (view: 'home' | 'projects' | 'skills' | 'about' | 'contact') => void;
 }
 
 export default function Navigation({ currentView, onNavigate }: NavigationProps) {
@@ -56,6 +56,16 @@ export default function Navigation({ currentView, onNavigate }: NavigationProps)
               >
                 {t.nav.skills}
               </button>
+              <button
+                onClick={() => onNavigate('about')}
+                className={`px-3 py-2 text-sm font-medium transition-all ${
+                  currentView === 'about'
+                    ? 'text-cyan-400 border-b-2 border-cyan-400'
+                    : 'text-gray-400 hover:text-cyan-300'
+                }`}
+                >
+                  {t.nav.about}
+                </button>
               <button
                 onClick={() => onNavigate('contact')}
                 className={`px-3 py-2 text-sm font-medium transition-all ${

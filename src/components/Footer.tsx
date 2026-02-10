@@ -2,7 +2,7 @@ import { useLanguage } from '../context/LanguageContext';
 import { Github, Linkedin, Mail, Heart } from 'lucide-react';
 
 interface FooterProps {
-  onNavigate?: (view: 'home' | 'projects' | 'skills' | 'contact') => void;
+  onNavigate?: (view: 'home' | 'projects' | 'skills' | 'about' | 'contact') => void;
 }
 export default function Footer({ onNavigate }: FooterProps) {
   const { language } = useLanguage();
@@ -27,7 +27,7 @@ export default function Footer({ onNavigate }: FooterProps) {
 
   const t = content[language];
 
-  const handleLinkClick = (view: 'home' | 'projects' | 'skills' | 'contact') => {
+  const handleLinkClick = (view: 'home' | 'projects' | 'skills' | 'about' | 'contact') => {
     if (onNavigate) {
       onNavigate(view);
       window.scrollTo({top: 0, behavior: 'smooth' });
@@ -81,6 +81,14 @@ export default function Footer({ onNavigate }: FooterProps) {
                   className="text-gray-400 hover:text-cyan-400 transition-colors text-left"
                 >
                   {language === 'en' ? 'Skills' : 'Habilidades'}
+                </button>
+              </li>
+              <li>
+                <button
+                  onClick={() => handleLinkClick("about")}
+                  className="text-gray-400 hover:text-cyan-400 transition-colors text-left"
+                >
+                  {language === 'en' ? 'About' : 'Sobre mi'}
                 </button>
               </li>
               <li>

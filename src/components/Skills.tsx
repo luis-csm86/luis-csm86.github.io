@@ -1,12 +1,14 @@
 import { useLanguage } from '../context/LanguageContext';
 import { skills, certifications } from '../data/skills';
-import { Award, BarChart3, Code2, Wrench, PieChart } from 'lucide-react';
+import { Award, BarChart3, Code2, Wrench, PieChart, Languages, User } from 'lucide-react';
 
 const categoryIcons = {
   analytics: BarChart3,
   programming: Code2,
   tools: Wrench,
   visualization: PieChart,
+  languages: Languages,
+  soft_skills: User,
 };
 
 const categoryNames = {
