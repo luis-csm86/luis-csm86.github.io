@@ -1,5 +1,6 @@
 import { useLanguage } from '../../context/LanguageContext';
 import { about } from '../../data/about';
+import { 
 
 export default function AboutBio() {
   const { language } = useLanguage();
@@ -30,7 +31,7 @@ export default function AboutBio() {
         {/* Accent image or placeholder */}
         <div className="rounded-2xl overflow-hidden border border-cyan-500/20 bg-cyan-500/5 backdrop-blur-md p-4">
           <img
-            src="/public/images/prof4.svg"
+            src="/images/prof4.svg"
             alt="About accent"
             className="rounded-xl opacity-50"
           />
