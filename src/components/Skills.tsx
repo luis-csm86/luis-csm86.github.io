@@ -26,7 +26,7 @@ const categoryNames = {
     tools: 'Herramientas',
     visualization: 'Visualización',
     languages: 'Idiomas',
-    soft_skills: 'Aptitudes',
+    soft_skills: 'Habilidades',
   },
 };
 
@@ -69,10 +69,10 @@ export default function Skills() {
                 </div>
 
                 <div className="space-y-4">
-                  {categorySkills.map((skill) => (
-                    <div key={skill.name}>
+                  {categorySkills.map((skill, index) => (
+                    <div key={`${skill.name.en}-${index}`}>
                       <div className="flex justify-between items-center mb-2">
-                        <span className="text-gray-300 font-medium">{skill.name}</span>
+                        <span className="text-gray-300 font-medium">{skill.name[language]}</span>
                         <span className="text-cyan-400 text-sm font-bold">{skill.level}%</span>
                       </div>
                       <div className="h-2 bg-gray-800 rounded-full overflow-hidden border border-cyan-500/20">

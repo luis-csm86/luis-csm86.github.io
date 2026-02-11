@@ -1,5 +1,8 @@
 export interface Skill {
-  name: string;
+  name: {
+    en: string;
+    es: string;
+  };
   level: number;
   category: 'analytics' | 'programming' | 'tools' | 'visualization' | 'languages' | 'soft_skills';
 }
@@ -16,24 +19,24 @@ export interface Certification {
 }
 
 export const skills: Skill[] = [
-  { name: 'Python', level: 95, category: 'programming' },
-  { name: 'SQL', level: 90, category: 'programming' },
-  { name: 'Pandas', level: 90, category: 'analytics' },
-  { name: 'NumPy', level: 85, category: 'analytics' },
-  { name: 'Matplotlib', level: 85, category: 'visualization' },
-  { name: 'Seaborn', level: 85, category: 'visualization' },
-  { name: 'Scikit-learn', level: 80, category: 'analytics' },
-  { name: 'Tableau', level: 80, category: 'visualization' },
-  { name: 'Excel', level: 90, category: 'tools' },
-  { name: 'R', level: 70, category: 'programming' },
-  { name: 'Git', level: 85, category: 'tools' },
-  { name: 'Portuguese', level: 100, category: 'languages' },
-  { name: 'Spanish', level: 100, category: 'languages' },
-  { name: 'English', level: 100, category: 'languages'},
-  { name: 'Communication', level: 90, category: 'soft_skills' },
-  { name: 'Team Collaboration', level: 90, category: 'soft_skills' },
-  { name: 'Problem Solving', level: 90, category: 'soft_skills' },
-  { name: 'Jupyter', level: 90, category: 'tools' },
+  { name: { en: 'Python', es: 'Python' }, level: 95, category: 'programming' },
+  { name: { en: 'SQL', es: 'SQL' }, level: 90, category: 'programming' },
+  { name: { en:'Pandas', es: 'Pandas' }, level: 90, category: 'analytics' },
+  { name: { en: 'NumPy', es: 'Numpy' }, level: 85, category: 'analytics' },
+  { name: { en: 'Matplotlib', es: 'Matplotlib' }, level: 85, category: 'visualization' },
+  { name: { en: 'Seaborn', es: 'Seaborn' }, level: 85, category: 'visualization' },
+  { name: { en: 'Scikit-learn', es: 'Scikit-learn' }, level: 80, category: 'analytics' },
+  { name: { en: 'Tableau', es: 'Tableau' }, level: 80, category: 'visualization' },
+  { name: { en: 'Excel', es: 'Excel' }, level: 90, category: 'tools' },
+  { name: { en: 'R', es: 'R' }, level: 70, category: 'programming' },
+  { name: { en: 'Git', es: 'Git' }, level: 85, category: 'tools' },
+  { name: { en: 'Portuguese', es: 'Portugués' }, level: 100, category: 'languages' },
+  { name: { en: 'Spanish', es: 'Español' }, level: 100, category: 'languages' },
+  { name: { en: 'English', es: 'Inglés' }, level: 100, category: 'languages'},
+  { name: { en: 'Communication', es: 'Comunicación' }, level: 90, category: 'soft_skills' },
+  { name: { en: 'Team Collaboration', es: 'Trabajo en equipo' }, level: 90, category: 'soft_skills' },
+  { name: { en: 'Problem Solving', es: 'Resolución de problemas' }, level: 90, category: 'soft_skills' },
+  { name: { en: 'Jupyter', es: 'Jupyter' }, level: 90, category: 'tools' },
 ];
 
 export const certifications: Certification[] = [

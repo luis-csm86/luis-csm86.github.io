@@ -30,9 +30,9 @@ export default function AboutBio() {
         {/* Accent image or placeholder */}
         <div className="rounded-2xl overflow-hidden border border-cyan-500/20 bg-cyan-500/5 backdrop-blur-md p-4">
           <img
-            src="/images/about-accent.jpg"
+            src="/public/images/prof4.svg"
             alt="About accent"
-            className="rounded-xl opacity-80"
+            className="rounded-xl opacity-50"
           />
         </div>
       </div>

@@ -110,7 +110,7 @@ export const translations: Record<Language, Translations> = {
     about: {
       title: 'Sobre Mi',
       subtitle: 'Un poco sobre mi trayectoria, mis valores y cómo trabajo con datos.',
-      softSkills: 'Aptitutes',
+      softSkills: 'Habilidades',
       experience: 'Experiencia Profesional',
       dataApproach: 'Mi Enfoque con los Datos',
       workStyle: 'Cómo Trabajo',    
