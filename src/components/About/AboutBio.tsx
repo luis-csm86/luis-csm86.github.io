@@ -1,6 +1,5 @@
 import { useLanguage } from '../../context/LanguageContext';
 import { about } from '../../data/about';
-import { 
 
 export default function AboutBio() {
   const { language } = useLanguage();
